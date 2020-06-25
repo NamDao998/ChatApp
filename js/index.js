@@ -1,6 +1,6 @@
 window.onload = () => {
     // console.log('loaded');
-    view.setActiveScreem('registerScreem')
-    view.setActiveScreem('loginScreem')
+    view.setActiveScreen('registerScreen')
+    view.setActiveScreen('loginScreen')
     
 }

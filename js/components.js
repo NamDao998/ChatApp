@@ -1,6 +1,6 @@
 const components = {};
 // components.welcomeScreem = `<div>Welcome to chat app <div>`
-components.registerScreem = `
+components.registerScreen = `
 <div class="register-container">
 <div class="register-form">
     <div class="title">Mindx Chat</div>
@@ -37,7 +37,7 @@ components.registerScreem = `
     </form>
 </div>
 </div>`
-components.loginScreem = `<div class="login-container">
+components.loginScreen = `<div class="login-container">
 <div class="login-form">
     <div class="title">MindX Chat</div>
     <form id="form-login">

@@ -1,8 +1,8 @@
 const view = {};
-view.setActiveScreem = (screemName) =>{
-    switch (screemName) {
-        case `registerScreem`:
-            document.getElementById('app').innerHTML = components.registerScreem
+view.setActiveScreen = (screenName) =>{
+    switch (screenName) {
+        case `registerScreen`:
+            document.getElementById('app').innerHTML = components.registerScreen
             const registerForm = document.getElementById('form-register')
             registerForm.addEventListener('submit', (e) =>{
                 e.preventDefault()
@@ -38,9 +38,9 @@ view.setActiveScreem = (screemName) =>{
                 view.setActiveScreen('loginScreen');
             });
             break;
-        case `loginScreem`:
-            document.getElementById('app').innerHTML = components.loginScreem
-             const loginForm = document.getElementById('login-form')
+        case `loginScreen`:
+            document.getElementById('app').innerHTML = components.loginScreen
+             const loginForm = document.getElementById('form-login')
             loginForm.addEventListener('submit', (e) => {
                 e.preventDefault()
                 const loginInfo = {
