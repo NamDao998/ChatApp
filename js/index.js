@@ -13,4 +13,20 @@ window.onload = () => {
 //   console.log(firebase.app().name);
   view.setActiveScreen("registerScreen");
   view.setActiveScreen("loginScreen");
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    console.log('nammmmmmmm');
+    
+      model.currentUser = {
+          displayName: user.displayName,
+
+          email: user.email,
+      }
+      view.setActiveScreen(`welcomeScreen`);
+  } else {
+      alert(`Mời bạn đăng nhập`);
+      view.setActiveScreen(`loginScreen`);
+  }
+});
 };
